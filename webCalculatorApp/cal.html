@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webCal</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="calBody">
+        <span id="ip"></span>
+        <div class="keybord">
+
+            <div class="row">
+                <div class="coloumn">
+                    <button class="button btnA" onclick="ac()">AC</button>
+                    <button class="button btnA" onclick="del()">del</button>
+                    <button class="button btnO" onclick="percent()">%</button>
+                    <button class="button btnO" onclick="div()">&#247</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="coloumn">
+                    <button class="button" onclick="seven()">7</button>
+                    <button class="button" onclick="eight()">8</button>
+                    <button class="button" onclick="nine()">9</button>
+                    <button class="button btnO" onclick="mul()">x</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="coloumn">
+                    <button class="button" onclick="four()">4</button>
+                    <button class="button" onclick="five()">5</button>
+                    <button class="button" onclick="six()">6</button>
+                    <button class="button btnO" onclick="sub()">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="coloumn">
+                    <button class="button" onclick="one()">1</button>
+                    <button class="button" onclick="two()">2</button>
+                    <button class="button" onclick="three()">3</button>
+                    <button class="button btnO" onclick="add()">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="coloumn">
+                    <button class="button btnA" onclick="uc()">UC</button>
+                    <button class="button" onclick="zero()">0</button>
+                    <button class="button btnO" onclick="point()">.</button>
+                    <button class="button btnO" onclick="equal()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="./mixkit-game-click-1114.wav" id="audio"></audio>
+    <script src="cal.js"></script>
+</body>
+
+</html>

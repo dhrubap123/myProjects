@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.calBody{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    /* margin-top: 3px; */
+}
+h1{
+    margin-top: 9px;
+    font-size: 2.3rem;
+    font-weight: 900;
+    animation-name: dd;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+@keyframes dd{
+    0%{
+        color: black;
+    }
+    33%{
+        color: rgb(255, 8, 0);
+    }
+    100%{
+        color: rgb(0, 162, 255);
+    }
+}
+.keybord{
+    margin-top: 3px;
+}
+.button{
+    width: 70px;
+    height: 60px;
+    margin: -2px;
+    border: 0.3px solid rgba(191, 244, 167, 0.92);
+    font-size: 1rem;
+    font-family: ui-rounded;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px rgb(232, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 5px rgb(7, 7, 7);
+}
+.button:hover{
+    background-color: rgb(93, 92, 92);
+    color: white;
+    text-shadow: none;
+}
+.row{
+    display: flex;
+}
+.coloumn{
+    display: flex;
+}
+.btnA{
+    color: rgb(0, 162, 255);
+}
+.btnA:hover{
+    background-color: rgb(148, 215, 254);
+    color: black;
+    text-shadow: none;
+}
+.btnO{
+    color: rgb(255, 8, 0);
+}
+.btnO:hover{
+    background-color: rgb(254, 134, 130);
+    color: black;
+    text-shadow: none;
+}
+#ip{
+    width: 200px;
+    height: 70px;
+    border: transparent;
+    padding: 13px;
+    box-sizing: border-box;
+    overflow-wrap:break-word;
+    font-size: 0.9rem;
+    font-weight: 1000;
+}
+
+/* .darkMode{
+    background-color: black;
+} */
