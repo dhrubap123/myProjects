@@ -1,0 +1,10 @@
+cloud = responce.cloud_pct
+feelslike = responce.feels_like
+humidity = responce.humidity
+maxTemp = responce.max_temp
+mintemp = responce.min_temp
+sunrise = responce.sunrise
+sunset = responce.sunset 
+temp = responce.temp
+windDegrees= responce.wind_degrees
+windSpeed = responce.wind_speed

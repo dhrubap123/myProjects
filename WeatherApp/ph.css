@@ -1,0 +1,131 @@
+body{
+    width: 100%;
+    height: 1200px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute;
+    top: 200px;
+    left: 0px; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.head{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    padding: 1px 3px;
+}
+.head::before{
+    content: "";
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(255, 239, 213);
+    /* box-shadow: 0 0 1px orange; */
+    opacity: 0.5;
+    z-index: -1;
+    animation-name: ddhead;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+@keyframes ddhead{
+    from{
+        background-color: rgb(244, 255, 213);
+    }
+    to{
+        background-color: rgb(130, 214, 247);
+    }
+}
+
+.headingImage{
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.headingText{
+    /* display: inline-block; */
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    /* text-align: center; */
+    color: orange;
+    animation: dd;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+@keyframes dd{
+    from{
+        color: orange;
+    }
+    to{
+        color: rgb(20, 180, 243);
+    }
+}
+#search{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(20, 180, 243);
+    font-weight: bold;
+}
+#search input{
+    position: relative;
+    left: 5px;
+    height: 20px;
+    border: 1px solid orange;
+    padding: 0 3px;
+    
+}
+#btn{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 5px;
+    background-color: transparent;
+    border: 0.5px solid orange;
+}
+#btn:hover{
+    background-color: rgb(250, 214, 145);
+    cursor: pointer;
+}
+#btn:active{
+    background-color: rgb(248, 239, 223);
+}
+.searchImage{
+    height: 10px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+#cityy{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    position:absolute;
+    top: 120px;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 0 3px blue;
+    /* width: fit-content; */
+    padding: 6px;
+    border-radius: 13px;
+    opacity: 0;
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+

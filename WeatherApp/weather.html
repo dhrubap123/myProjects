@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:768px)" href="ph.css"> -->
+</head>
+
+<body>
+    <header class="head">
+        <img src="./logo.png" alt="" class="headingImage">
+        <h1 class="headingText">Weather</h1>
+        <span id="search"><div class="tt">Search</div><div><input type="text" placeholder="Enter desired city name" id="ip"></input><button
+                id="btn" onclick="search()"><i class="fa fa-search"></i></button></div></span>
+    </header>
+    <!-- live alert -->
+
+    <div class="alert" id="alert">
+        <span id="exclamanation">&#33;</span><span id="textA">Server Error Or, Invalid City</span><span><button
+                id="btnCross" onclick="show_hide()">X</button></span>
+    </div>
+
+
+    <h2 id="cityy" style="color:rgb(0, 47, 255)"></h2>
+    <main class="main">
+
+        <div class="card">
+            <h1>
+                <div>Temparature</div>
+                <div id="temp" style="color:orange"></div>
+            </h1>
+            <h3>
+                Max-Temparature:<span id="maxTemp" style="color:rgb(255, 133, 85)"></span>
+            </h3>
+            <h3>
+                Min-Temparature:<span id="mintemp" style="color:rgb(255, 133, 85)"></span>
+            </h3>
+        </div>
+        <div class="card">
+            <h1>
+                <div>Humidity</div>
+                <div id="humidity" style="color:orange"></div>
+            </h1>
+            <h3>
+                Feels Like:<span id="feelslike" style="color:rgb(255, 133, 85)"></span>
+            </h3>
+            <h3>
+                Cloud_PCT:<span id="cloud" style="color:rgb(255, 133, 85)"></span>
+            </h3>
+        </div>
+        <div class="card">
+            <h1>
+                <div>Wind-Speed</div>
+                <div id="windSpeed" style="color:orange"></div>
+            </h1>
+            <h3>
+                Wind-Degree:<span id="windDegrees" style="color:rgb(255, 133, 85)"></span>
+            </h3>
+        </div>
+    </main>
+</body>
+<script src="./app.js"></script>
+
+</html>
